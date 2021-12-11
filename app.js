@@ -1,5 +1,7 @@
-var a = 120000000000;
-var b = 13.6899898;
-var a = ();
-var result = a + b;
-console.log(typeof a)
+
+function generatesum (number1 , number2){
+    var sum = number1 + number2;
+    console.log(sum)
+}
+
+generatesum(20 , 3);
