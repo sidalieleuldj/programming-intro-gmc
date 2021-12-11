@@ -42,13 +42,40 @@ function arrayliste1() {
 
 arrayliste1();
 
-
 function arrayliste() {
-    var list = [];
-    for (var i = 1; i <= 10; i++) {
-      list.push(i * 2);
-    }
-    console.log(list);
+  var list = [];
+  for (var i = 1; i <= 10; i++) {
+    list.push(i * 2);
   }
-  
-  arrayliste();
+  console.log(list);
+}
+
+arrayliste();
+
+function arrayliste2() {
+  var anotherliste = [];
+  for (var i = 1; i <= 10; i++) {
+    if (anotherliste.length < 5) {
+      anotherliste.push(i * 2);
+    } else {
+      return anotherliste;
+    }
+  }
+
+  return anotherliste;
+}
+
+var result = arrayliste2();
+console.log(result);
+
+function moystudent() {
+  var studentlist = [10, 12.5, 15, 20, 8, 9];
+  var somme = 0;
+  for (i = 0; i < studentlist.length; i++) {
+    somme = somme + studentlist[i];
+  }
+  var moy = somme / studentlist.length;
+  console.log(moy);
+}
+
+moystudent();
