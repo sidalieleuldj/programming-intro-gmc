@@ -27,7 +27,28 @@ function storevariables() {
   list[0] = a;
   list[1] = b;
   list[2] = c;
-  console.log(list , list.length);
+  console.log(list, list.length);
 }
 
 storevariables();
+
+function arrayliste1() {
+  var list = [];
+  for (var i = 0; i < 10; i++) {
+    list[i] = i + 1;
+  }
+  console.log(list);
+}
+
+arrayliste1();
+
+
+function arrayliste() {
+    var list = [];
+    for (var i = 1; i <= 10; i++) {
+      list.push(i * 2);
+    }
+    console.log(list);
+  }
+  
+  arrayliste();
