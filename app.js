@@ -1,18 +1,18 @@
-function generatesum(n1, n2, n3) {
-  if (typeof n1 == "number") {
-    if (typeof n2 == "number") {
-      if (typeof n3 == "number") {
-        var sum = n1 + n2 + n3;
-        console.log(sum);
+function generatefullname(firstname, lastname , surname) {
+  if (typeof firstname == "string") {
+    if (typeof lastname == "string") {
+      if (typeof surname == "string") {
+        var fullname = firstname + " " + lastname + " " + surname;
+        console.log(fullname);
       } else {
-        console.log("n3 is not number");
+        console.log("surname is not string");
       }
     } else {
-      console.log("n2 must be a number");
+      console.log("lastname is not string");
     }
   } else {
-    console.log("n1 must be a number");
+    console.log("fistname is not string");
   }
 }
 
-generatesum(20, 5 , 5);
+generatefullname("eleuldj", "sidali" , "sidou");
