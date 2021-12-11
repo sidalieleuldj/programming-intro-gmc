@@ -13,6 +13,21 @@ function login(username, password) {
   }
 }
 
-login("eerrr" , 1234);
-login("sidali" , 14785);
-login("sidali" , 1234);
+login("eerrr", 1234);
+login("sidali", 14785);
+login("sidali", 1234);
+
+var a = 5;
+var b = 10;
+var c = 15;
+
+var list = [];
+
+function storevariables() {
+  list[0] = a;
+  list[1] = b;
+  list[2] = c;
+  console.log(list , list.length);
+}
+
+storevariables();
